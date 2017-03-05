@@ -1,0 +1,83 @@
+{
+    "name": "aurelia-froala-editor-plugin",
+    "version": "0.0.1",
+    "description": "Aurelia infinite scroll plugin",
+    "keywords": [
+        "aurelia",
+        "plugin",
+        "froala",
+        "wysiwyg",
+        "html",
+        "rich",
+        "text",
+        "editor"
+    ],
+    "homepage": "https://github.com/behzad888/aurelia-froala-editor-plugin#readme",
+    "main": "dist/commonjs/aurelia-froala-editor-plugin.js",
+    "typings": "dist/aurelia-froala-editor-plugin.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/behzad888/aurelia-froala-editor-plugin.git"
+    },
+    "author": "Behzad Abbasi (behzad888)",
+    "contributors": [
+        "Behzad Abbasi (behzad888)"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/behzad888/aurelia-froala-editor-plugin/issues"
+    },
+    "scripts": {
+        "test": "gulp test",
+        "build": "gulp build",
+        "preversion": "npm test",
+        "version": "npm run build && gulp prepare-package && git add -A dist doc/CHANGELOG.md bower.json",
+        "postpublish": "git push upstream master && git push upstream --tags"
+    },
+    "jspm": {
+        "registry": "npm",
+        "jspmPackage": true,
+        "main": "aurelia-froala-editor-plugin",
+        "format": "amd",
+        "directories": {
+            "dist": "dist/amd"
+        },
+        "dependencies": {
+            "jquery": "^3.1.1",
+            "font-awesome": "^4.7.0",
+            "aurelia-dependency-injection": "^1.0.0",
+            "froala-editor": "^2.5.0",
+            "aurelia-binding": "^1.0.1",
+            "aurelia-event-aggregator": "^1.0.0",
+            "aurelia-i18n": "^1.0.0",
+            "aurelia-loader": "^1.0.0",
+            "typer": "^1.1.0"
+        },
+        "peerDependencies": {
+            "aurelia-dependency-injection": "^1.0.0"
+        },
+        "devDependencies": {
+            "aurelia-dependency-injection": "^1.0.0",
+            "aurelia-pal-browser": "^1.0.0",
+            "aurelia-polyfills": "^1.0.0",
+            "fetch": "github:github/fetch@^1.0.0"
+        }
+    },
+    "dependencies": {
+        "aurelia-dependency-injection": "^1.0.0",
+        "froala-editor": "^2.5.0",
+        "aurelia-binding": "^1.0.1",
+        "aurelia-event-aggregator": "^1.0.0",
+        "aurelia-i18n": "^1.0.0",
+        "aurelia-loader": "^1.0.0",
+        "typer": "^1.1.0"
+    },
+    "devDependencies": {
+        "spoonx-tools": "^1.0.0-0"
+    },
+    "aurelia": {
+        "build": {
+            "resources": []
+        }
+    }
+}

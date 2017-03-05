@@ -1,0 +1,1 @@
+export * from './aurelia-froala-editor-plugin';
